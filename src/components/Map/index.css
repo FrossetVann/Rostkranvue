@@ -1,0 +1,7 @@
+/* @import '../../css/App.css'; */
+
+.map{
+  width: 100%;
+  height: 450px;
+  background-color: var(--grey-color);
+}

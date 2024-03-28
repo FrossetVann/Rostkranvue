@@ -1,0 +1,124 @@
+/* @import '../../css/App.css'; */
+
+#contact{
+  width: 100%;
+  min-height: 200px;
+  background-image: url(/contact_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.contact-content
+{
+  width: 100%;
+  background-color: var(--grey-color);
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.inner-contact-content
+{
+  flex-grow: 1;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-corners{
+  width: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.corner-black{
+  background-image: url(/corner_black.svg);
+  transform: rotate(90deg);
+  width: 20px;
+  height: 20px;
+}
+.corner-black-bottom{
+  transform: rotate(180deg);
+}
+.information-content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 52px;
+  width: calc(340px - 60px);
+  background-color: var(--black-color);
+  padding: 65px 30px 0 30px;
+  
+}  
+.information-contact * {
+  color: var(--light-color);
+}
+.information-logo{
+  color: var(--light-color);
+  font-size: 2em;
+}
+.contact-information
+{
+  display: flex;
+  flex-grow: 1;
+}
+
+.contact-form{
+  width: 325px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.contact-choice
+{
+  text-align: center;
+  padding-top: 7px;
+}
+.form-title{
+  font-size: 32px;
+}
+
+.information-contact {
+  display: grid;
+  font-size: 20px;
+}
+ 
+.logo {
+  width: 48px;
+  height: 48px;
+  grid-area: 1 / 1 / 3 / 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-name {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.contact-value {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.phone{
+  background-image: url(/phone.svg);
+}
+.smartphone{
+  background-image: url(/smartphone.svg);
+}
+.mail{
+  background-image: url(/mail.svg);
+}
+
+
+@media (max-width: 1400px) {
+  .contact-corners{display: none;}
+  .inner-contact-content{width: 100%;}
+  .information-content{padding-bottom: 65px;}
+  .information-contact {  justify-content: center;}
+}
+
+@media (max-width: 980px) {
+  .inner-contact-content{gap: 20px;}
+  .contact-form{width: 100%;}
+  .contact-choice{ width: 100%;}
+}

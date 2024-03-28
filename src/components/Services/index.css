@@ -1,0 +1,15 @@
+/* @import '../../css/App.css'; */
+
+.services{
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--grey-color);
+  padding: 100px 0;
+}
+.services-list{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 65px;
+}

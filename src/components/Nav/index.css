@@ -1,0 +1,34 @@
+/* @import '../../css/App.css'; */
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  transition: .1s;
+  
+}
+.footer-container .nav .nav-item {
+  color: var(--light-color);
+
+}
+.router-link-active{
+  color: var(--blue-color);
+}
+.nav-item:hover{
+  color: var(--blue-color);
+}
+
+@media (max-width: 1380px) {
+  .footer-container .nav{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-container .nav{
+    flex-direction: row;
+    gap: 80px;
+  }
+}

@@ -1,0 +1,54 @@
+/* @import '../../css/App.css'; */
+
+.header{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(254, 254, 254, 0.90);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+.header-container
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-address
+{
+  width: 380px;
+}
+.title-accent{
+  color: var(--blue-color);
+}
+.corner{
+  width: 20px;
+  height: 20px;
+  background-image: url(/corner_right.svg);
+}
+.corner-left{
+  transform: rotate(90deg);
+}
+.under
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  
+}
+.under-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72%;
+  border-radius: 0 0 18px 18px;
+  background-color: rgba(254, 254, 254, 0.90);
+  height: 50px;
+  
+}
+.under-header:hover{
+  width: 74%;
+}

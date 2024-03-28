@@ -1,0 +1,19 @@
+/* @import '../../css/App.css'; */
+
+.dignity{
+  width: 100%;
+  min-height: 470px;
+  background-color: var(--grey-color);
+}
+.dignity-container{
+  padding: 100px 0;
+}
+.dignity-list{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}

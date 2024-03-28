@@ -1,0 +1,36 @@
+/* @import '../../css/App.css'; */
+
+.dignity-item{
+  width: 325px;
+  height: 160px;
+  position: relative;
+  background-color: var(--light-color);
+  border-radius: 10px;
+  border: 2px solid var(--blue-color);
+  overflow: hidden;
+  list-style: none;
+}
+.dignity-item__overlay{
+  width: 325px;
+  height: 160px;
+  position: absolute;
+  top: 100%;
+  background-color: var(--blue-color);
+}
+.dignity-item__counter
+{
+  font-size: 128px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: var(--blue-color);
+  z-index: 1;
+}
+.dignity-item:hover .dignity-item__overlay{
+  top: 0%;
+}
+.dignity-item:hover .dignity-item__counter{
+  color: var(--light-color);
+}
+

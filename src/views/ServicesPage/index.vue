@@ -1,0 +1,10 @@
+
+<script setup>
+import Services from '../../components/Services/index.vue'
+import Slider from '../../components/Slider/index.vue'
+</script>
+<template>
+      <Slider/>
+      <Services/>
+</template>
+
