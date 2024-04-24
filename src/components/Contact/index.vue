@@ -3,7 +3,7 @@
   import {reactive , computed} from 'vue'
   import '../../css/App.css';
   import './index.css';
-  import axios from 'Axios'
+  import axios from 'axios'
 
   const props = defineProps({
     phoneNumber: String,

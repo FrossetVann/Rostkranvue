@@ -4,7 +4,12 @@
 </script>
 
 <template>
-      <section class='aboutmini'>
+      <section class='aboutmini-block'>
+      <div class="illustration-background-block-mini">
+        <img class="illustration-background-mini illustration-background-left-mini" src="/illustration_border.svg">
+        <img class="illustration-background-mini illustration-background-right-mini" src="/illustration_border.svg">
+      </div>
+      <div class='aboutmini'>
       <h4 class='aboutmini-title'>Рост<span class='title-accent'>Кран</span></h4>
       <p class='aboutmini-text'>
         -  ваш надежный партнер в мире 
@@ -12,7 +17,7 @@
         Надежность. Безопасность.
         Профессионализм.
       </p>
-    </section>
-
+    </div>
+  </section>
 </template>
 

@@ -8,11 +8,11 @@ import Title from '../../components/Title/index.vue';
 </script>
 
 <template>
-      <Slider/>
-    <section className='dignity'>
-      <div className="container dignity-container">
+      <Slider  class="slider-mini" />
+    <section class='dignity'>
+      <div class="container dignity-container">
         <Title title="Наши Достоинства"/>
-        <ul className="dignity-list">
+        <ul class="dignity-list">
           <Dignity :number="14"/>
           <Dignity :number="15"/>
           <Dignity :number="124"/>

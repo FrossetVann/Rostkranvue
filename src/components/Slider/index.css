@@ -1,4 +1,4 @@
-/* @import '../../css/App.css'; */
+@import '../../css/App.css';
 
 .slider{
   width: 100%;
@@ -8,15 +8,47 @@
   align-items: center;
   justify-content: start;
   overflow: hidden;
-
+  position: relative;
+  transition: .5s;
 }
 
-.slide{
+.slider-mini{
+  width: 100%;
+  height: 400px;
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  position: relative;
+  transition: .5s;
+}
+
+.slider-mini .slider-control{
+  top: 60%;
+}
+
+/* .slide {
   width: 100%;
   height: 100%;
-  position: relative;
-  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: 0s;
+} */
 
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .slide img{
@@ -38,28 +70,51 @@
 .slide-text{
   font-size: 18px;
 }
-.slider-control{
+/* .slider-control{
   position: absolute;
   background-color: #fff;
   width: 60px;
   height: 60px;
   cursor: pointer;
+} */
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-image: url(slide_arrow.svg);
+  cursor: pointer;
+
+  background-size: cover;
+}
+
+.control-right:hover {
+  transform: translateY(-50%) scale(.8);
+}
+.control-left:hover {
+  transform: translateY(-50%) rotate(180deg) scale(.8);
 }
 .control-left{
-  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+  left: 20px;
 }
 .control-right{
-  right: 0;
+  right: 20px;
 }
 .indicator{
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top:24%;
+  top:20%;
   left: 18%;
   gap: 8px;
+  z-index: 1;
 }
+
+
 .dot{
   z-index: 10;
   width: 10px;
@@ -67,6 +122,58 @@
   background-color: #fff;
   border-radius: 50%;
 }
-.dot-active{
-  background-color: red;
+
+.dot.active {
+  transform: scale(.9);
+  background-color: var(--blue-color);
+}
+
+.slider-mini .indicator{
+  display: none;
+}
+
+
+.slider {
+  position: relative;
+}
+
+.slides-container {
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-info {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .slider{
+    height: 400px;
+  }
+  .slider-mini{
+    height: 200px;
+  }
+  .indicator{
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slider-control {
+    height: 25px;
+    width: 25px;
+  }
 }

@@ -19,16 +19,17 @@
   color: var(--blue-color);
 }
 
-@media (max-width: 1380px) {
-  .footer-container .nav{
+@media (max-width: 700px) {
+  .under .nav{
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
+    font-size: 24px;
+    justify-content: start;
   }
-}
-
-@media (max-width: 1024px) {
-  .footer-container .nav{
-    flex-direction: row;
-    gap: 80px;
+  .router-link-active{
+    color: var(--light-color);
+  }
+  .nav-item:hover{
+    color: var(--light-color);
   }
 }

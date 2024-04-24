@@ -7,14 +7,15 @@ import DignityPage from './views/DignityPage/index.vue'
 import ServicesPage from './views/ServicesPage/index.vue'
 import ServicePage from './views/ServicePage/index.vue'
 import NotFoundPage from './views/NotFoundPage/index.vue'
-
+import LoginPage from './views/LoginPage/index.vue'
 
 const routes = [
   { path: '/', name: 'MainPage' ,component: MainPage },
   { path: '/DignityPage', name: 'DignityPage' , component: DignityPage },
   { path: '/ServicesPage', name: 'ServicesPage' , component: ServicesPage },
-  { path: '/ServicePage:id', name: 'ServicePage' , component: ServicePage },
-  { path: '/404', name: 'NotFoundPage' , component: NotFoundPage }
+  { path: '/ServicePage/:id', name: 'ServicePage' , component: ServicePage },
+  { path: '/Login', name: 'LoginPage' , component: LoginPage },
+  {  path: '/:pathMatch(.*)', name: 'NotFoundPage' , component: NotFoundPage }
 ]
 
 const router = createRouter({

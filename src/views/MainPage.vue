@@ -13,7 +13,8 @@ import Contact from '../components/Contact/index.vue'
 </script>
 
 <template>
-    <Slider/>
+  
+    <Slider class="slider"/>
     <Services/>
     <Contact/>
     <AboutMini/>

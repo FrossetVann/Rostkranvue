@@ -14,17 +14,13 @@
 </script>
 
 <template>
-      <router-link to="/ServicePage:id">
-      <li class='service'>
-        <img class='service-img' :src="imageUrl" alt="услуга" />
-        <div class="service-content">
-        <h4 class="content-title">
-          {{title}}
-        </h4>
-        <div class="content-description">
-        {{description}}
-        </div>
-        </div>
-      </li>
-    </router-link>
+  <router-link :to="'/ServicePage/' + id">
+    <li class="service">
+      <img class="service-img" :src="imageUrl" alt="услуга" />
+      <div class="service-content">
+        <h4 class="content-title">{{ title }}</h4>
+        <div class="content-description">{{ description }}</div>
+      </div>
+    </li>
+  </router-link>
 </template>

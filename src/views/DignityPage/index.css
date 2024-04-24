@@ -6,7 +6,7 @@
   background-color: var(--grey-color);
 }
 .dignity-container{
-  padding: 100px 0;
+  padding: 0 0 100px 0;
 }
 .dignity-list{
   width: 100%;
@@ -16,4 +16,10 @@
   list-style: none;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .dignity-container{
+    padding: 0 0 50px 0;
+  }
 }

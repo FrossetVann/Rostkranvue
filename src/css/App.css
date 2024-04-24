@@ -58,7 +58,8 @@ input:focus, textarea:focus
   outline: 2px solid var(--blue-color);
 }
 .btn{
-  width: 325px;
+  width: 100%;
+  max-width: 325px;
   height: 60px;
   background-color: var(--light-color);
   border-radius: 8px;
@@ -74,7 +75,8 @@ input:focus, textarea:focus
   color: var(--blue-color);
 }
 .form-input{
-  width: calc(325px - 36px);
+  width: calc(100% - 36px);;
+  max-width: calc(325px - 36px);
   height: calc(60px - 36px);
   background-color: var(--light-color);
   border-radius: 8px;

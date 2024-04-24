@@ -4,7 +4,7 @@ import Services from '../../components/Services/index.vue'
 import Slider from '../../components/Slider/index.vue'
 </script>
 <template>
-      <Slider/>
+      <Slider  class="slider-mini" />
       <Services/>
 </template>
 

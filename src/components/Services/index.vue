@@ -1,6 +1,6 @@
 <script setup>
 import { inject, reactive, ref, watch, onMounted } from "vue";
-import axios from 'Axios'
+import axios from 'axios'
 import '../../css/App.css';
 import './index.css';
 import Service from '../Service/index.vue'
@@ -37,6 +37,7 @@ onMounted(() => {
         <Service
         v-for="service in services"
         :key="services.id"
+        :id="service.id"
         :title="service.title"
         :imageUrl="service.imageUrl"
         :description="service.description" />
