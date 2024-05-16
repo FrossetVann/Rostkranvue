@@ -34,7 +34,7 @@ const burgerClick = () => {
     <div class='under'>
       <div class="corner corner-left"></div>
       <div :class="{ 'open': data.burger }" class="under-header">
-        <Nav/>
+        <Nav @toggleBurger="burgerClick" />
       </div>
       <div class="corner"></div>
     </div>

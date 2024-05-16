@@ -9,12 +9,14 @@
     phoneNumber: String,
     massage: String,
     name: String,
+    email: String
 })
 
 const review = reactive({
     phoneNumber: '',
     massage: '',
     name: '',
+    email:''
   })
 
   const fetchCall = async () => {
@@ -49,25 +51,28 @@ const fetchMassage = async () => {
 </script>
 
 <template>
-  <section id='contact'>
+  <section id="contact">
     <div class="container contact-container">
       <Title title="Связь"/>
       <div class="contact-content">
         <div class="inner-contact-content">
-        <form @submit.prevent.stop="fetchCall" class="contact-form">
-          <h3 class='form-title'>Напишите нам</h3>
-          <input  v-model="review.name" class='form-input' type="text" placeholder='Имя' />
-          <textarea v-model="review.massage" class='form-input form-textarea' name="comment" placeholder='Комментарий'>
-            </textarea>
-          <button type="submit" class="btn">Отправить</button>
-        </form>
-        <p class='contact-choice'>или</p>
+          <form @submit.prevent.stop="submitForm" class="contact-form">
+            <h3 class="form-title">Напишите нам</h3>
+            <input v-model="review.name" class="form-input" type="text" placeholder="Имя" required />
+            <input v-model="review.email" class="form-input" type="email" placeholder="Электронная почта" required />
+            <textarea v-model="review.message" class="form-input form-textarea" name="comment" placeholder="Комментарий" required></textarea>
+            <label for="agree" class="checkbox-label">
+              <input v-model="review.agree" id="agree" type="checkbox" required /> Я соглашаюсь с обработкой моих данных
+            </label>
+            <button type="submit" class="btn" :disabled="!isValidForm">Отправить</button>
+          </form>
+        <!-- <p class='contact-choice'>или</p>
         <form @submit.prevent.stop="fetchMassage" class="contact-form">
           <h3 class='form-title'>Закажите звонок</h3>
           <input v-model="review.name" class='form-input' type="text" placeholder='Имя' />
           <input  v-model="review.phoneNumber" class='form-input' type="text" placeholder='+7 (988) 580-80-80' />
           <button type="submit" class="btn">Заказать</button>
-        </form>
+        </form> -->
         </div>
       <div class="contact-information">
           <div class="contact-corners">
