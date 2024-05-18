@@ -6,8 +6,8 @@
 <template>
       <section class='aboutmini-block'>
       <div class="illustration-background-block-mini">
-        <img class="illustration-background-mini illustration-background-left-mini" src="/illustration_border.svg">
-        <img class="illustration-background-mini illustration-background-right-mini" src="/illustration_border.svg">
+        <img class="illustration-background-mini illustration-background-left-mini" src="/illustration_border.svg" alt="">
+        <img class="illustration-background-mini illustration-background-right-mini" src="/illustration_border.svg" alt="">
       </div>
       <div class='aboutmini'>
       <h4 class='aboutmini-title'>Рост<span class='title-accent'>Кран</span></h4>

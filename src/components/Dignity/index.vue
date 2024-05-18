@@ -3,12 +3,16 @@
   import './index.css';
 
   defineProps({
-    number: Number,
+    number: String,
+    text: String,
   })
 </script>
 <template>
-      <li class='dignity-item'>
+  <li class="">
+    <div class='dignity-item'>
       <p class='dignity-item__counter'>{{number}}</p>
       <div class="dignity-item__overlay"></div>
-    </li>
+    </div>
+    <p class="ditnity-title">{{text}}</p>
+  </li>
 </template>

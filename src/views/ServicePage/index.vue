@@ -33,12 +33,11 @@ const id = Number(route.params.id);
     <section className='service-open'>
       <div className="container service-container">
         <Title :title="title" />
-        <div className="service-content">
+        <div className="service-content-b">
           <img className="content-img" :src="imageUrl" alt="услуга" />
          
           <div class="service-text-btn">
-             <p className="content-text">Техническое обслуживание подъёмно-транспортного оборудования, предлагаемое компанией "РостКран", это процесс, который направлен на поддержание надлежащего состояния и работоспособности кранов, лифтов, эскалаторов и других подъёмно-транспортных устройств. Это включает в себя регулярное техническое освидетельствование, проверку и предупреждающий ремонт оборудования для улучшения его надёжности, безопасности и эффективности.</p>
-            <!-- <p className="content-text">{{ description }}</p> -->
+            <p className="content-text">{{ description }}</p>
             <button className="btn">Написать нам</button>
           </div>
         </div>

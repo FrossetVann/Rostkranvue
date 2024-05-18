@@ -33,4 +33,9 @@
 .dignity-item:hover .dignity-item__counter{
   color: var(--light-color);
 }
+.ditnity-title{
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
 

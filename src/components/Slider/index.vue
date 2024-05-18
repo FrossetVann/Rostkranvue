@@ -4,9 +4,9 @@ import '../../css/App.css';
 import './index.css';
 
 const sliders = ref([
-  { id: 0, topic: '1', text: 'text1', img: '/slide1.png' },
-  { id: 1, topic: 'fwgwgwgwg', text: 'text2', img: '/slide2.png' },
-  { id: 2, topic: 'gwgwgwg', text: 'text3', img: '/slide3.png' },
+  { id: 0, topic: 'Монтаж, пуско-наладка и ремонт оборудования', text: 'описание описание описание описание описание описание описание описание описание', img: '/slide1.webp' },
+  { id: 1, topic: 'Техническое обслуживание', text: 'описание описание описание описание описание описание описание описание описание', img: '/services/service3.webp' },
+  { id: 2, topic: 'Установка и наладка приборов', text: 'описание описание описание описание описание описание описание описание описание', img: '/services/service4.webp' },
 ]);
 const currentIndex = ref(0);
 
@@ -36,5 +36,4 @@ const prevSlide = () => {
     <div class="slider-control control-left" @click="prevSlide"></div>
     <div class="slider-control control-right" @click="nextSlide"></div>
   </section>
-
 </template>

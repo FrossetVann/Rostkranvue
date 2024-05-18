@@ -13,10 +13,10 @@ import Title from '../../components/Title/index.vue';
       <div class="container dignity-container">
         <Title title="Наши Достоинства"/>
         <ul class="dignity-list">
-          <Dignity :number="14"/>
-          <Dignity :number="15"/>
-          <Dignity :number="124"/>
-          <Dignity :number="1"/>
+          <Dignity number="14" text="Лет на рынке"/>
+          <Dignity number="15" text="Что-то там еще"/>
+          <Dignity number="124" text="Успешных проектов"/>
+          <Dignity number="1" text="В регионе"/>
         </ul>
       </div>
     </section>
