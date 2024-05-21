@@ -7,7 +7,6 @@ defineProps({
 })
 </script>
 
-
 <template>
       <h2 class='title'>{{title}}</h2>
 </template>

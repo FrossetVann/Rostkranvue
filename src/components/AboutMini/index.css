@@ -1,8 +1,5 @@
 /* @import '../../css/App.css'; */
-.aboutmini-block{
-  /* height: 350px; */
-  
-}
+
 .aboutmini{
   width: 100%;
   height: 350px;
@@ -56,7 +53,7 @@ transform: scale(-1, 1)
 left: 0;
 }
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .aboutmini-title{
       font-size: 48px;
     }
@@ -67,6 +64,6 @@ left: 0;
     .illustration-background-mini{
       opacity: .5;
       bottom: 70px;
-    }
-  }
+   }
+}
 

@@ -1,8 +1,6 @@
-
 <script setup>
   import '../../css/App.css';
   import './index.css';
-
 </script>
 
 <template>

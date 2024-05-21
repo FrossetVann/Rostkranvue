@@ -8,7 +8,6 @@
     imageUrl: String,
     description:String,
   })
-
 </script>
 
 <template>

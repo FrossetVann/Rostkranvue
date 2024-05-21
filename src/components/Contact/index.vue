@@ -1,42 +1,22 @@
 <script setup>
   import Title from '../Title/index.vue'
-  import {reactive , computed} from 'vue'
   import '../../css/App.css';
   import './index.css';
-  import axios from 'axios'
+  import { onMounted } from 'vue';
+  import { useRoute } from 'vue-router';
 
-  const props = defineProps({
-    phoneNumber: String,
-    massage: String,
-    name: String,
-    email: String
-})
+  const route = useRoute();
 
-const review = reactive({
-    phoneNumber: '',
-    massage: '',
-    name: '',
-    email:''
-  })
-
-
-
-const fetchMassage = async () => {
-  try {
-    console.log('submit')
-    const { data } = await axios.post(`https://07bd216385fe26b9.mokky.dev/massages`, {
-      massage: review.massage,
-      name: review.name,
-    })
-    review.massage = ''
-    review.name = ''
-  } catch (err) {
-    console.log(err)
-  } 
-}
-
-
+  onMounted(() => {
+    if (route.hash === '#contact') {
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
 </script>
+
 
 <template>
   <section id="contact">
@@ -44,16 +24,16 @@ const fetchMassage = async () => {
       <Title title="Связь"/>
       <div class="contact-content">
         <div class="inner-contact-content">
-          <form action="feedback.php" method="post" class="contact-form">
-            <h3 class="form-title">Напишите нам</h3>
-            <input v-model="review.name" class="form-input" type="text" placeholder="Имя" name="name" required />
-            <input v-model="review.email" class="form-input" type="email" placeholder="Электронная почта" name="email" required />
-            <textarea v-model="review.message" class="form-input form-textarea" name="comment" placeholder="Комментарий" required></textarea>
-            <label for="agree" class="checkbox-label">
-              <input v-model="review.agree" id="agree" type="checkbox" required /> Я соглашаюсь с обработкой моих данных
-            </label>
-            <button type="submit" class="btn" :disabled="!isValidForm">Отправить</button>
-          </form>
+          <form action="/php/feedback.php" method="post" class="contact-form">
+    <h3 class="form-title">Напишите нам</h3>
+    <input  class="form-input" type="text" placeholder="Имя" name="name" required />
+    <input  class="form-input" type="email" placeholder="Электронная почта" name="email" required />
+    <textarea  class="form-input form-textarea" placeholder="Комментарий" name="comment" required></textarea>
+    <label for="agree" class="checkbox-label">
+        <input  id="agree" type="checkbox" required /> Я соглашаюсь с обработкой моих данных
+    </label>
+    <button type="submit" class="btn">Отправить</button>
+</form>
         </div>
       <div class="contact-information">
           <div class="contact-corners">
@@ -91,3 +71,5 @@ const fetchMassage = async () => {
     </div>
   </section>
 </template>
+
+

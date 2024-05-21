@@ -5,15 +5,9 @@ import Services from '../components/Services/index.vue'
 import AboutMini from '../components/AboutMini/index.vue'
 import Map from '../components/Map/index.vue'
 import Contact from '../components/Contact/index.vue'
-
-
-
-
-
 </script>
 
 <template>
-  
     <Slider class="slider"/>
     <Services/>
     <Contact/>

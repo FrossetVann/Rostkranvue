@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 1100px) {
-    .service-content{
+    .service-content-b{
     flex-direction: column;
     gap: 30px;
   }
