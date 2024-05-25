@@ -11,9 +11,10 @@
        <Nav/>
         <div class="">
           <p class='footer-address'>
-        Ростовская область, г. Ростов-На-Дону,
+        Ростовская область, г. Ростов-На-Дону
+        <!-- ,
         пер. 1-й Машиностроительный, 
-        зд. 5, кв. 6
+        зд. 5, кв. 6 -->
         </p>
         <router-link to="/PrivacypolicyPage" class='policy-footer'>Политика конфиденциальности</router-link> 
         </div>

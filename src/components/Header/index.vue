@@ -21,9 +21,9 @@ const burgerClick = () => {
           <h1 class='header-logo'>Рост<span class='title-accent'>Кран</span></h1>
         </router-link>
         <p class='header-address'>
-        Ростовская область, г. Ростов-На-Дону,
-        пер. 1-й Машиностроительный, 
-        зд. 5, кв. 6
+        Ростовская область, г. Ростов-На-Дону
+        <!-- , пер. 1-й Машиностроительный, 
+        зд. 5, кв. 6  -->
         </p>
         <div class="burger-button" @click="burgerClick">
           <span class="burger-line"></span>
