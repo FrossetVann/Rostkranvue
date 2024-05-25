@@ -25,7 +25,10 @@
 .title-accent{
   color: var(--blue-color);
 }
-
+.policy-footer{
+  text-decoration: underline;
+  color: var(--light-color);
+}
 @media (max-width: 1024px) {
   .footer-container {
     justify-content: start;

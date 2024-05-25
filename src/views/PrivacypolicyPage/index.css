@@ -1,0 +1,10 @@
+.policy-block{
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--grey-color);
+  padding: 0 0 100px 0;
+}
+
+.politica-text {
+  line-height: 30px;
+}

@@ -22,5 +22,4 @@
     </div>
   </router-link>
   </li>
-
 </template>

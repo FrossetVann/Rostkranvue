@@ -127,6 +127,9 @@
 .mail{
   background-image: url(/mail.svg);
 }
+.policy-link{
+  text-decoration: underline;
+}
 
 
 @media (max-width: 1400px) {

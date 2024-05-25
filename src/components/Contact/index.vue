@@ -17,7 +17,6 @@
   });
 </script>
 
-
 <template>
   <section id="contact">
     <div class="container contact-container">
@@ -30,7 +29,7 @@
     <input  class="form-input" type="email" placeholder="Электронная почта" name="email" required />
     <textarea  class="form-input form-textarea" placeholder="Комментарий" name="comment" required></textarea>
     <label for="agree" class="checkbox-label">
-        <input  id="agree" type="checkbox" required /> Я соглашаюсь с обработкой моих данных
+        <input  id="agree" type="checkbox" required /> Я соглашаюсь с <router-link to="/PrivacypolicyPage" class='policy-link'>обработкой моих данных</router-link> 
     </label>
     <button type="submit" class="btn">Отправить</button>
 </form>
@@ -71,5 +70,3 @@
     </div>
   </section>
 </template>
-
-
